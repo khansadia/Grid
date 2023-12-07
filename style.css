@@ -95,7 +95,7 @@ body {
 }
 
 .box3 {
-    background-color: blueviolet;
+    background-color: rgb(44, 4, 81);
     border-radius: 7px;
     padding: 20px;
     font-size: 150%;
@@ -185,7 +185,7 @@ body {
 }
 
 .box5 {
-    background-color: chartreuse;
+    background-color: rgb(60, 76, 45);
     border-radius: 7px;
     padding: 20px;
     font-size: 150%;
@@ -210,3 +210,124 @@ body {
     grid-column: 2;
     grid-row: 2;
 }
+
+/* End */
+
+/* boxSix rules -- Line-based-placement-using-span-keywords*/
+
+.boxSix {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+}
+
+.box6 {
+    background-color: bisque;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.A6 {
+    grid-column: 1 / span 2;
+}
+
+.B6 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+.C6 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.D6 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* End */
+
+/* Line-based-placement-named-lines */
+
+.boxSeven {
+    display: grid;
+    gap: 10px;
+
+    grid-template-columns: [col1-start] 100px [col2-start] 100px [col3-start] 100px [col3-end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+
+}
+
+.box7 {
+    background-color: chocolate;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.A7 {
+    grid-column: col1-start / col3-start;
+    grid-row: row1-start;
+}
+
+.B7 {
+    grid-column: col3-start;
+    grid-row: row1-start / row2-end;
+}
+
+.C7 {
+    grid-column: col1-start;
+    grid-row: row2-start;
+}
+
+.D7 {
+    grid-column: col2-start;
+    grid-row: row2-start;
+}
+
+/* End */
+
+/* The repeat keyword */
+
+.boxEight {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, [col] 100px);
+    grid-template-rows: repeat(3, [row] auto);
+} 
+
+.box8 {
+    background-color: darkseagreen;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.A8 {
+    grid-column: col / span 2;
+    grid-row: row;
+}
+
+.B8 {
+    grid-column: col 3 / span 2;
+    grid-row: row;
+}
+
+.C8 {
+    grid-column: col;
+    grid-row: row 2;
+}
+
+.D8 {
+    grid-column: col 2 / span 3;
+    grid-row: row 2;
+}
+
+.E8 {
+    grid-column: col / span 4;
+    grid-row: row 3;
+}
+
+/* End */

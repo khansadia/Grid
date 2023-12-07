@@ -1,76 +1,155 @@
-/* Reset Browser */
-body{
-    margin:0;
+/* Reset browsers*/
+body {
+    margin: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/* End */
-/* Box 1 Styling */
-.boxOne{
-    display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    gap: 15px;
+/*End*/
 
-}
-/* Box2 styling */
-.box{
-    background-color: rgb(79, 79, 59);
-    color: white;
-    border-radius: 10px;
-    padding: 20ch;
-    font-size: 150px;
-}
-/* Box2 styling End */
-/* Box 2 styling Line-Base-Placement*/
-.boxTwo{
+/* box1 rules */
+
+.boxOne {
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    gap: 15px;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
 }
+ 
+.box {
+    background-color: #444;
+    color: #FFFFFF;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+/*End*/
+
+/* boxTwo rules -- Line-based-placement*/
+
+
+.boxTwo {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+}
+
 .box2 {
-    background-color: rgb(79, 79, 59);
-    color: white;
-    border-radius: 10px;
-    padding: 20ch;
-    font-size: 150px;
+    background-color: aqua;
+    color: #333;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 150%;
 }
 
-.A{
-    grid-column-start:2px ;
-    grid-column-end: 3px;
-    grid-row-start:1px ;
-    grid-row-end: 2px;
+.A {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
-.B{
-    grid-column-start:4px ;
-    grid-column-end: 3px;
-    grid-row-start:2px ;
-    grid-row-end: 3px;
+.B {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
-.C
-{
-    grid-column-start:3px ;
-    grid-column-end: 4px;
-    grid-row-start:2px ;
-    grid-row-end: 3px;
+
+.C {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
-.D
-{
-    grid-column-start:1px ;
-    grid-column-end: 2px;
-    grid-row-start:1px ;
-    grid-row-end: 3px;
+
+.D {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
-.E
-{
-    grid-column-start:1px ;
-    grid-column-end: 2px;
-    grid-row-start:2px ;
-    grid-row-end: 3px;
+
+.E {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
-.F
-{
-    grid-column-start:3px ;
-    grid-column-end: 4px;
-    grid-row-start:1px ;
-    grid-row-end: 2px;
+
+.F {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+ /* End */
+ /* <!-- Line-based-placement-shorthand --> */
+ .boxThree{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    gap: 15px;
+ }
+ .box3{
+    background-color: lightcoral;
+    border-radius: 9px;
+    padding: 8px;
+    font-size: 12cqh;
+ }
+
+ .A3 {
+    grid-column: 2 / 3;
+    grid-row: 1 /2;
+    
+ }
+ .B3 {
+    grid-column: 2 / 3;
+    grid-row:  2/ 3;
+}
+.C3  {
+    grid-column: 3 / 4;
+    grid-row:  2/ 3;
+}
+
+.D3   {
+    grid-column: 1 / 2;
+    grid-row:  1/ 2;
+}
+
+.E3  {
+    grid-column: 1 / 2;
+    grid-row:  2/ 3;
+}
+.F3  {
+    grid-column: 3 / 4;
+    grid-row:  1/ 2;
+}
+/* Box four rules--- line based placement short hand  grid area property */
+.boxFour{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    gap: 15px;
+ }
+ .box4{
+    background-color: rgb(128, 165, 240);
+    border-radius: 9px;
+    padding: 8px;
+    font-size: 12cqh;
+ }
+ .A4  {
+    grid-area: 1/2 /2 /3;
+    /* we can write all together TOP,LEFT,RIGHT,Bottom(rows och column, same like above : grid-column: 2 / 3;
+    grid-row: 1 /2; ) in a single line */
+}
+.B4  {
+    grid-area: 2/2 /3 /3;
+}
+.C4  {
+    grid-area: 2/3 /3 /4;
+}
+.D4  {
+    grid-area: 1/1 /2 /2;
+}
+.E4  {
+    grid-area: 2/1 /3 /2;
+}
+.F4  {
+    grid-area: 1/3 /2 /4;
 }

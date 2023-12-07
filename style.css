@@ -1,0 +1,76 @@
+/* Reset Browser */
+body{
+    margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* End */
+/* Box 1 Styling */
+.boxOne{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    gap: 15px;
+
+}
+/* Box2 styling */
+.box{
+    background-color: rgb(79, 79, 59);
+    color: white;
+    border-radius: 10px;
+    padding: 20ch;
+    font-size: 150px;
+}
+/* Box2 styling End */
+/* Box 2 styling Line-Base-Placement*/
+.boxTwo{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    gap: 15px;
+}
+.box2 {
+    background-color: rgb(79, 79, 59);
+    color: white;
+    border-radius: 10px;
+    padding: 20ch;
+    font-size: 150px;
+}
+
+.A{
+    grid-column-start:2px ;
+    grid-column-end: 3px;
+    grid-row-start:1px ;
+    grid-row-end: 2px;
+}
+.B{
+    grid-column-start:4px ;
+    grid-column-end: 3px;
+    grid-row-start:2px ;
+    grid-row-end: 3px;
+}
+.C
+{
+    grid-column-start:3px ;
+    grid-column-end: 4px;
+    grid-row-start:2px ;
+    grid-row-end: 3px;
+}
+.D
+{
+    grid-column-start:1px ;
+    grid-column-end: 2px;
+    grid-row-start:1px ;
+    grid-row-end: 3px;
+}
+.E
+{
+    grid-column-start:1px ;
+    grid-column-end: 2px;
+    grid-row-start:2px ;
+    grid-row-end: 3px;
+}
+.F
+{
+    grid-column-start:3px ;
+    grid-column-end: 4px;
+    grid-row-start:1px ;
+    grid-row-end: 2px;
+}

@@ -337,7 +337,7 @@ display:grid;
 gap: 10px;
 grid-template-columns: 120px 120px 120px;
 grid-template-areas: "..header header header"
-              "..sidebar content content";
+              "..sidebar .content content";
               /* ... no of dots push header forward   or we can also write as "sidebar header 
               header" "sidebar content contennt"*/
 }
@@ -358,3 +358,34 @@ grid-area: sidebar;
 grid-area: content;
 }
 /* End*/
+/* Another grid areas naming*/
+
+.boxTen{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 120px 120 px 120px;
+    grid-template-areas: "...header2 header2"
+                "sidebar2 content2 content2"
+                "footer2 footer2 footer2";      
+  
+}
+.box10{
+    background-color: rgb(107, 47, 101);
+    color: whitesmoke;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 120%;
+}
+.header2{
+    grid-area: header2;
+}
+.sidebar2{
+    grid-area:sidebar2 ;
+}
+.content2{
+    grid-area:content2 ;
+}
+.footer2{
+    grid-area: footer2;
+    background-color: mediumvioletred;
+}

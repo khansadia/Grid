@@ -331,3 +331,30 @@ body {
 }
 
 /* End */
+/* Define Grid by naming */
+.boxNine {
+display:grid;
+gap: 10px;
+grid-template-columns: 120px 120px 120px;
+grid-template-areas: "..header header header"
+              "..sidebar content content";
+              /* ... no of dots push header forward   or we can also write as "sidebar header 
+              header" "sidebar content contennt"*/
+}
+.box9{
+    background-color: darkolivegreen;
+    color: whitesmoke;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 120%;
+}
+.header {
+grid-area: header;
+}
+.sidebar{
+grid-area: sidebar;
+}
+.content{
+grid-area: content;
+}
+/* End*/
